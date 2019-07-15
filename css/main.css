@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 20%;
+    margin: 0 auto;
+}
+
+#number {
+    text-align: center;
+}
