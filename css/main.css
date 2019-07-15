@@ -4,12 +4,13 @@ body {
 .controls {
     display: flex;
     justify-content: space-between;
-    max-width: 20%;
+    max-width: 15%;
     margin: 0 auto;
 }
 
 .number {
     text-align: center;
+    width: 40px;
 }
 
 .btn {

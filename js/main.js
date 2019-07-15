@@ -8,13 +8,23 @@ numberDisplay.innerText = initialDisplay;
 
 btn[0].addEventListener('click', e => {
     initialDisplay += parseInt(inputAmount.value);
+    checkForZero();
     numberDisplay.innerText = initialDisplay;
 })
 
 btn[1].addEventListener('click', e => {
     initialDisplay -= parseInt(inputAmount.value);
+    checkForZero();
     numberDisplay.innerText = initialDisplay;
 })
+
+const checkForZero = () => {
+    if (initialDisplay < 0){
+        numberDisplay.style.color = "red";
+    } else {
+        numberDisplay.style.color = "black";
+    }
+}
 
 const hoverListener = (node, e) => {
     for (let i = 0; i < node.length; i ++){
