@@ -8,6 +8,11 @@ body {
     margin: 0 auto;
 }
 
-#number {
+.number {
     text-align: center;
+}
+
+.btn {
+    background-color: #a9a9a9;
+    color: #ffffff;
 }
